@@ -92,7 +92,7 @@ int um_digito = get_first_digits(tamanho, numero_cartao, 1);
 
 
 if(tamanho == 15 && (dois_digitos == 34 || dois_digitos == 37) && number_card_isvalid(numero_cartao, tamanho) ) {
-   printf("AMERICAN EXPRESS\n");
+   printf("AMEX\n");
 } else if(tamanho == 16 && ( dois_digitos >= 51 && dois_digitos <= 55) && number_card_isvalid(numero_cartao, tamanho)) {
     printf("MASTERCARD\n");
 }else if((tamanho == 13 || tamanho == 16) && um_digito == 4 && number_card_isvalid(numero_cartao, tamanho)) {
